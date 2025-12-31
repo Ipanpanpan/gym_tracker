@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.11'
 
@@ -31,7 +31,7 @@ jobs:
         flet build apk --project "GymTracker" --description "My Gym Tracker" --product "GymTracker" --org "com.gymtracker" --no-permissions --include-packages flet
 
     - name: Upload APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: gym-tracker-apk
         path: build/apk/*.apk
