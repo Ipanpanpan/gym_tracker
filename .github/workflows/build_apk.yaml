@@ -45,8 +45,11 @@ jobs:
       run: |
         yes | flet build apk src --project "GymTracker" --description "My Gym Tracker" --product "GymTracker" --org "com.gymtracker"
 
+    - name: List files (Debug)
+      run: ls -R
+
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: gym-tracker-apk
-        path: build/apk/*.apk
+        path: "**/*.apk"
