@@ -26,6 +26,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install flet
 
+    - name: Setup Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.x'
+
     - name: Build APK
       run: |
         flet build apk --project "GymTracker" --description "My Gym Tracker" --product "GymTracker" --org "com.gymtracker"
