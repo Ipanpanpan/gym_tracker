@@ -28,7 +28,7 @@ jobs:
 
     - name: Build APK
       run: |
-        flet build apk --project "GymTracker" --description "My Gym Tracker" --product "GymTracker" --org "com.gymtracker" --no-permissions --include-packages flet
+        flet build apk --project "GymTracker" --description "My Gym Tracker" --product "GymTracker" --org "com.gymtracker"
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
