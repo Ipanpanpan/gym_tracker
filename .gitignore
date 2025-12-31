@@ -1,0 +1,14 @@
+# Virtual Environment
+gym_tracker/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Database
+*.db
+
+# Flet/Flutter Builds
+build/
