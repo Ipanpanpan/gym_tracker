@@ -33,7 +33,7 @@ jobs:
 
     - name: Build APK
       run: |
-        flet build apk --project "GymTracker" --description "My Gym Tracker" --product "GymTracker" --org "com.gymtracker"
+        yes | flet build apk --project "GymTracker" --description "My Gym Tracker" --product "GymTracker" --org "com.gymtracker"
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
